@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="Style.css" />
+    <script src="js/jquery-3.2.1.min.zopfli.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Josfin+Sans|Lobster+Two|Pcifico');
+    </style>
+</head>
+<body>
+    <section>
+        <div class="section1">
+            <img src="Img/MBA.png" class="logo"/>
+            <div class="navigation">
+                <img src="Img/list_filled_30px.png" class="toggle"/>
+            <a class="cgr">Mon profil</a>
+            </div>
+            <div>
+
+                <div class="inner3">
+                    <img src="Img/IMG3.jpg" class="img3"/>
+                </div>
+
+                <a class="submenu">Modiffier profil</a>
+                <a class="submenu">Mis à jour formulaire</a>
+                <a class="submenu">Mis à jour adrèsse</a>
+                <a class="submenu">Misa à jour Contactact(s)</a>
+                <a class="submenu">Mis à jour photos</a>
+                
+            </div>
+        </div>
+        <div class="section2">
+            <input type="text" placeholder="Chercher"/><button type="button" class="btncherche">Chercher</button>
+
+            <img src="Img/ringer_volume_30px.png" class="call-icon"/>
+            <span class="tel-no">033-4594-016</span>
+
+            <nav>
+                <a class="menuitem">Acueil</a>
+                <a class="menuitem">Apropos</a>
+                <a class="menuitem">Formulaire</a>
+                <a class="menuitem">Adrèsse @</a>
+                <a class="menuitem">Contact (+261)</a>
+                <a class="menuitem">Photos</a>
+            </nav>
+
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide1">
+                        <img src="Img/IMG.png" class="img1"/>
+                    </div>
+                    <div class="slide1">
+                        <img src="Img/IMG2.png" class="img2"/>
+                    </div>
+                    <div class="slide1">
+                        <img src="Img/yht.png" class="img3"/>
+                    </div>
+                    
+                    <div class="content">
+                        
+                        <table>
+                            <h1><u>Formulaire</u></h1>
+                            <tr>
+                                <td><u>Nom:</u></td>
+                                <td>MAHAIMILA</td>
+                            </tr>
+                            <tr>
+                                <td><u>Prenom:</u></td>
+                                <td>Roger Thierry</td>
+                            </tr>
+                            <tr>
+                                <td><u>Numero:</u></td>
+                                <td>17</td>
+                            </tr>
+                            <tr>
+                                <td><u>Classe:</u></td>
+                                <td>IMTIC5</td>
+                            </tr>
+                        </table>
+                        <p><a class="btnshopnow">mahaimilathierry@gmail.com!</a></p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="content1">
+                 
+                    <div class="innertitle2">
+                            <h2>I.S.P.M</h2>
+                            <p class="para1">Institut Superieur Polytechnique de MADAGASCAR.</p>
+                            <p class="para1">La meilleure Ecole Polytechnique Privée dans L'ocean Indien</p>
+                        </div>
+
+                
+                
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        var $slides = $('.slides');
+        var $slide = $('.slide1');
+        var count = 1;
+
+        $(document).ready(function() {
+
+            setInterval(function(){
+
+                $slides.animate({'margin-left': '-68vw'}, 1200, function(){
+                    count++;
+                    if (count === 4){
+                        $slides.css("margin-left", 0);
+                        count = 1;
+                    }
+
+                });
+            },4000);
+        });
+
+    </script>
+</body>
+</html>
